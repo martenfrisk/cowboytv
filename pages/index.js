@@ -1,55 +1,29 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+// import Header from '@components/Header'
+// import Footer from '@components/Footer'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Cowboy TV - it's not TV, it's Cowboy TV</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="flex items-center justify-center w-screen h-screen">
 
-      <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-      </main>
+        <img src="/cowboytvtv3.png" className="z-20 object-cover mx-auto shadow-inner" style={{ width: '500px', height: '500px'}} />
+        <img className="absolute z-0" style={{height: '250px', width: '250px', top: '50%', transform: 'translateY(-59%)', overflow: 'hidden'}} src="/campfire.gif" />
+        <div className="absolute z-10 w-full h-full crt" style={{ height: '250px', width: '250px', backgroundColor: 'rgba(255,255,255,0.2)'}}>
+        &nbsp;
+        </div>
 
-      <Footer />
-
-      <style jsx>{`
-        .container {
-          height: 100vh;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-family: Menlo, Monaco, Lucida Console, Courier New, monospace;
-        }
-      `}</style>
-
+      </div>
       <style jsx global>{`
         html,
         body {
           padding: 0;
           margin: 0;
+          background-color: #000;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
             Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
         }
